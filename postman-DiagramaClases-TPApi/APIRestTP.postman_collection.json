@@ -1,0 +1,393 @@
+{
+	"info": {
+		"_postman_id": "c2f0c0df-1220-4fc2-8d24-769b8c16cdb9",
+		"name": "APIRestTP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30263457"
+	},
+	"item": [
+		{
+			"name": "Persona",
+			"item": [
+				{
+					"name": "GET ALL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://tpapirestjuli.onrender.com/api/basedatos/personas",
+							"protocol": "https",
+							"host": [
+								"tpapirestjuli",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"personas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET ONE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://tpapirestjuli.onrender.com/api/basedatos/personas",
+							"protocol": "https",
+							"host": [
+								"tpapirestjuli",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"personas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Valentina\",\r\n    \"apellido\": \"Pereira\",\r\n    \"dni\": 4555642,\r\n    \"domicilio\": {\r\n        \"calle\": \"LasTortugas\",\r\n        \"numero\": 1003,\r\n        \"localidad\": {\r\n            \"id\": 1,\r\n            \"denominacion\": \"Godoy Cruz\"\r\n        }\r\n    },\r\n    \"libros\": [\r\n        {\r\n            \"titulo\": \"Cien años de Soledad\",\r\n            \"genero\": \"Novela\",\r\n            \"fecha\": 1967,\r\n            \"paginas\": 496,\r\n            \"autores\": [\r\n                {\r\n                    \"id\": 1,\r\n                    \"nombre\": \"Gabriel\",\r\n                    \"apellido\": \"Marquez\",\r\n                    \"biografia\": \"Gabriel José de la Concordia García Márquez ​​ fue un escritor y periodista colombiano. Reconocido principalmente por sus novelas y cuentos, también escribió narrativa de no ficción, discursos, reportajes, críticas cinematográficas y memorias.\"\r\n                }\r\n            ]\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://tpapirestjuli.onrender.com/api/basedatos/personas",
+							"protocol": "https",
+							"host": [
+								"tpapirestjuli",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"personas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MODIFICAR",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 4,\r\n        \"nombre\": \"Lorena\",\r\n        \"apellido\": \"Pereira\",\r\n        \"dni\": 4555642,\r\n        \"domicilio\": {\r\n            \"id\": 4,\r\n            \"calle\": \"LasTortugas\",\r\n            \"numero\": 1003,\r\n            \"localidad\": {\r\n                \"id\": 1,\r\n                \"denominacion\": \"Godoy Cruz\"\r\n            }\r\n        },\r\n        \"libros\": [\r\n            {\r\n                \"id\": 3,\r\n                \"titulo\": \"Cien años de Soledad\",\r\n                \"fecha\": 1967,\r\n                \"genero\": \"Novela\",\r\n                \"paginas\": 496,\r\n                \"autores\": []\r\n            }\r\n        ]\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://tpapirestjuli.onrender.com/api/basedatos/personas/4",
+							"protocol": "https",
+							"host": [
+								"tpapirestjuli",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"personas",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://tpapirestjuli.onrender.com/api/basedatos/personas/5",
+							"protocol": "https",
+							"host": [
+								"tpapirestjuli",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"personas",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Autor",
+			"item": [
+				{
+					"name": "GET ALL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://tpapirestjuli.onrender.com/api/basedatos/autores",
+							"protocol": "https",
+							"host": [
+								"tpapirestjuli",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"autores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET ONE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://tpapirestjuli.onrender.com/api/basedatos/autores",
+							"protocol": "https",
+							"host": [
+								"tpapirestjuli",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"autores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Gabriel\",\r\n    \"apellido\": \"Marquez\",\r\n    \"biografia\": \"Gabriel José de la Concordia García Márquez ​​ fue un escritor y periodista colombiano. Reconocido principalmente por sus novelas y cuentos, también escribió narrativa de no ficción, discursos, reportajes, críticas cinematográficas y memorias.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://tpapirestjuli.onrender.com/api/basedatos/autores",
+							"protocol": "https",
+							"host": [
+								"tpapirestjuli",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"autores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MODIFICAR",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://tpapirestjuli.onrender.com/api/basedatos/autores",
+							"protocol": "https",
+							"host": [
+								"tpapirestjuli",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"autores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://tpapirestjuli.onrender.com/api/basedatos/autores",
+							"protocol": "https",
+							"host": [
+								"tpapirestjuli",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"autores"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Localidad",
+			"item": [
+				{
+					"name": "GET ALL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://tpapirestjuli.onrender.com/api/basedatos/localidades",
+							"protocol": "https",
+							"host": [
+								"tpapirestjuli",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"localidades"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET ONE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://tpapirestjuli.onrender.com/api/basedatos/localidades",
+							"protocol": "https",
+							"host": [
+								"tpapirestjuli",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"localidades"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"denominacion\": \"Godoy Cruz\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://tpapirestjuli.onrender.com/api/basedatos/localidades",
+							"protocol": "https",
+							"host": [
+								"tpapirestjuli",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"localidades"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MODIFICAR",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://tpapirestjuli.onrender.com/api/basedatos/localidades",
+							"protocol": "https",
+							"host": [
+								"tpapirestjuli",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"localidades"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://tpapirestjuli.onrender.com/api/basedatos/localidades",
+							"protocol": "https",
+							"host": [
+								"tpapirestjuli",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"basedatos",
+								"localidades"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
